@@ -1,6 +1,5 @@
 # SwiftwithPython
 How to embed Python Framework into Swift Projects
-@kostrykin 
 
 1. Follow up the detail instructions on Python official website:
 https://docs.python.org/3.14/using/ios.html#adding-python-to-an-ios-project
@@ -83,4 +82,7 @@ func testPythonKit() {
     print(platform.system())
 }
 ```
+
+4. Final Result
+
 ![IMG_3538](https://github.com/user-attachments/assets/b15acf70-8987-48b3-b21a-7fe6780d5e3b)
