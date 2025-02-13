@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D54148F2D5DD33700C5FA08 /* dylib-Info-template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D54148E2D5DD33700C5FA08 /* dylib-Info-template.plist */; };
+		6D5414942D5DD45E00C5FA08 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D54148C2D5DD2B500C5FA08 /* Python.xcframework */; };
+		6D5414952D5DD45E00C5FA08 /* Python.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D54148C2D5DD2B500C5FA08 /* Python.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D5414B22D5DDFB500C5FA08 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5414B12D5DDFB500C5FA08 /* PythonKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D5414962D5DD45E00C5FA08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D5414952D5DD45E00C5FA08 /* Python.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D54148C2D5DD2B500C5FA08 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
+		6D54148E2D5DD33700C5FA08 /* dylib-Info-template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dylib-Info-template.plist"; sourceTree = "<group>"; };
+		6D5414932D5DD45E00C5FA08 /* iOSwithPython3.13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSwithPython3.13.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6D5414772D5DCA9C00C5FA08 /* iOSwithPython3.13 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = iOSwithPython3.13;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D5414722D5DCA9C00C5FA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5414942D5DD45E00C5FA08 /* Python.xcframework in Frameworks */,
+				6D5414B22D5DDFB500C5FA08 /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D54146C2D5DCA9C00C5FA08 = {
+			isa = PBXGroup;
+			children = (
+				6D5414772D5DCA9C00C5FA08 /* iOSwithPython3.13 */,
+				6D54148C2D5DD2B500C5FA08 /* Python.xcframework */,
+				6D54148E2D5DD33700C5FA08 /* dylib-Info-template.plist */,
+				6D5414932D5DD45E00C5FA08 /* iOSwithPython3.13.app */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D5414742D5DCA9C00C5FA08 /* iOSwithPython3.13 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D5414832D5DCA9E00C5FA08 /* Build configuration list for PBXNativeTarget "iOSwithPython3.13" */;
+			buildPhases = (
+				6D5414712D5DCA9C00C5FA08 /* Sources */,
+				6D5414722D5DCA9C00C5FA08 /* Frameworks */,
+				6D5414732D5DCA9C00C5FA08 /* Resources */,
+				6D5414972D5DD9B400C5FA08 /* Install Target Specific Python Standard Library */,
+				6D5414982D5DD9B700C5FA08 /* Prepare Python Binary Modules */,
+				6D5414962D5DD45E00C5FA08 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6D5414772D5DCA9C00C5FA08 /* iOSwithPython3.13 */,
+			);
+			name = iOSwithPython3.13;
+			packageProductDependencies = (
+				6D5414B12D5DDFB500C5FA08 /* PythonKit */,
+			);
+			productName = iOSwithPython3.13;
+			productReference = 6D5414932D5DD45E00C5FA08 /* iOSwithPython3.13.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D54146D2D5DCA9C00C5FA08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					6D5414742D5DCA9C00C5FA08 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 6D5414702D5DCA9C00C5FA08 /* Build configuration list for PBXProject "iOSwithPython3.13" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D54146C2D5DCA9C00C5FA08;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6D5414B02D5DDFB500C5FA08 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6D54146C2D5DCA9C00C5FA08;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D5414742D5DCA9C00C5FA08 /* iOSwithPython3.13 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D5414732D5DCA9C00C5FA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D54148F2D5DD33700C5FA08 /* dylib-Info-template.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D5414972D5DD9B400C5FA08 /* Install Target Specific Python Standard Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Install Target Specific Python Standard Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"$CODESIGNING_FOLDER_PATH/python/lib\"\nif [ \"$EFFECTIVE_PLATFORM_NAME\" = \"-iphonesimulator\" ]; then\n    echo \"Installing Python modules for iOS Simulator\"\n    rsync -au --delete \"$PROJECT_DIR/Python.xcframework/ios-arm64_x86_64-simulator/lib/\" \"$CODESIGNING_FOLDER_PATH/python/lib/\"\nelse\n    echo \"Installing Python modules for iOS Device\"\n    rsync -au --delete \"$PROJECT_DIR/Python.xcframework/ios-arm64/lib/\" \"$CODESIGNING_FOLDER_PATH/python/lib/\"\nfi\n";
+		};
+		6D5414982D5DD9B700C5FA08 /* Prepare Python Binary Modules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Python Binary Modules";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\ninstall_dylib () {\n    INSTALL_BASE=$1\n    FULL_EXT=$2\n\n    # The name of the extension file\n    EXT=$(basename \"$FULL_EXT\")\n    # The location of the extension file, relative to the bundle\n    RELATIVE_EXT=${FULL_EXT#$CODESIGNING_FOLDER_PATH/}\n    # The path to the extension file, relative to the install base\n    PYTHON_EXT=${RELATIVE_EXT/$INSTALL_BASE/}\n    # The full dotted name of the extension module, constructed from the file path.\n    FULL_MODULE_NAME=$(echo $PYTHON_EXT | cut -d \".\" -f 1 | tr \"/\" \".\");\n    # A bundle identifier; not actually used, but required by Xcode framework packaging\n    FRAMEWORK_BUNDLE_ID=$(echo $PRODUCT_BUNDLE_IDENTIFIER.$FULL_MODULE_NAME | tr \"_\" \"-\")\n    # The name of the framework folder.\n    FRAMEWORK_FOLDER=\"Frameworks/$FULL_MODULE_NAME.framework\"\n\n    # If the framework folder doesn't exist, create it.\n    if [ ! -d \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER\" ]; then\n        echo \"Creating framework for $RELATIVE_EXT\"\n        mkdir -p \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER\"\n        cp \"$CODESIGNING_FOLDER_PATH/dylib-Info-template.plist\" \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/Info.plist\"\n        plutil -replace CFBundleExecutable -string \"$FULL_MODULE_NAME\" \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/Info.plist\"\n        plutil -replace CFBundleIdentifier -string \"$FRAMEWORK_BUNDLE_ID\" \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/Info.plist\"\n    fi\n\n    echo \"Installing binary for $FRAMEWORK_FOLDER/$FULL_MODULE_NAME\"\n    mv \"$FULL_EXT\" \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/$FULL_MODULE_NAME\"\n    # Create a placeholder .fwork file where the .so was\n    echo \"$FRAMEWORK_FOLDER/$FULL_MODULE_NAME\" > ${FULL_EXT%.so}.fwork\n    # Create a back reference to the .so file location in the framework\n    echo \"${RELATIVE_EXT%.so}.fwork\" > \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/$FULL_MODULE_NAME.origin\"\n }\n\n PYTHON_VER=$(ls -1 \"$CODESIGNING_FOLDER_PATH/python/lib\")\n echo \"Install Python $PYTHON_VER standard library extension modules...\"\n find \"$CODESIGNING_FOLDER_PATH/python/lib/$PYTHON_VER/lib-dynload\" -name \"*.so\" | while read FULL_EXT; do\n    install_dylib python/lib/$PYTHON_VER/lib-dynload/ \"$FULL_EXT\"\n done\n\n # Clean up dylib template\n rm -f \"$CODESIGNING_FOLDER_PATH/dylib-Info-template.plist\"\n\n echo \"Signing frameworks as $EXPANDED_CODE_SIGN_IDENTITY_NAME ($EXPANDED_CODE_SIGN_IDENTITY)...\"\n find \"$CODESIGNING_FOLDER_PATH/Frameworks\" -name \"*.framework\" -exec /usr/bin/codesign --force --sign \"$EXPANDED_CODE_SIGN_IDENTITY\" ${OTHER_CODE_SIGN_FLAGS:-} -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der \"{}\" \\;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D5414712D5DCA9C00C5FA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6D5414812D5DCA9E00C5FA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/Python.framework/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D5414822D5DCA9E00C5FA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/Python.framework/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D5414842D5DCA9E00C5FA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSwithPython3.13/Preview Content\"";
+				DEVELOPMENT_TEAM = ED72FQVT6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.frogcjn.iOSwithPython3-13";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D5414852D5DCA9E00C5FA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOSwithPython3.13/Preview Content\"";
+				DEVELOPMENT_TEAM = ED72FQVT6C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.frogcjn.iOSwithPython3-13";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D5414702D5DCA9C00C5FA08 /* Build configuration list for PBXProject "iOSwithPython3.13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5414812D5DCA9E00C5FA08 /* Debug */,
+				6D5414822D5DCA9E00C5FA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D5414832D5DCA9E00C5FA08 /* Build configuration list for PBXNativeTarget "iOSwithPython3.13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5414842D5DCA9E00C5FA08 /* Debug */,
+				6D5414852D5DCA9E00C5FA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D5414B02D5DDFB500C5FA08 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D5414B12D5DDFB500C5FA08 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D5414B02D5DDFB500C5FA08 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6D54146D2D5DCA9C00C5FA08 /* Project object */;
+}
