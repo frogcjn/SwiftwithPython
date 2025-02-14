@@ -6,7 +6,7 @@ How to embed Python Framework into Swift Projects (currently iOS)
 
 2. Download Compiled Python.xcframework for iOS target
 https://github.com/beeware/Python-Apple-support/releases/tag/3.13-b3
-- `Python-3.13-iOS-support.b3.tar.gz
+- `Python-3.13-iOS-support.b3.tar.gz`
     - `./platform-site/sitecustomize.py` : use this file to custom download packages on targeted platform
     - `Python.xcframework`: this is what we need
 
