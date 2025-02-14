@@ -12,7 +12,7 @@ https://github.com/beeware/Python-Apple-support/releases/tag/3.13-b3
 
 3-8. Follow up the detail instructions on Python official website: [Using Python on iOS](https://docs.python.org/3.14/using/ios.html#adding-python-to-an-ios-project) (except the step 1, 4, 5, 10 in this document)
 
-(I also have a more detailed version published on my Notion [Python 3.13 on iOS](https://frogcjn.notion.site/Python-3-13-on-iOS-1984959764ca80999f25cf9897df83bc), including the necessary steps posted on Python official website)
+(I also have a more detailed version published on my Notion [Swift with Python Step by Step](https://frogcjn.notion.site/Python-3-13-on-iOS-1984959764ca80999f25cf9897df83bc), including the necessary steps posted on Python official website)
 
 9. Create two file copies called `module.modulemap` inside
 
