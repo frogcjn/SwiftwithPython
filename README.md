@@ -48,12 +48,10 @@ struct SwiftPythonApp: App {
 6. Also add a new `InitPython.swift` file to the target:
 
 ```Swift
-import Python
 import Foundation
-import PythonKit
+import Python
 
-
-
+// Python Init Part (Neccessary)
 func initPythonSimpleVersion() {
     print("init Python")
     
@@ -78,6 +76,8 @@ func initPythonSimpleVersion() {
     print("init Success")
 }
 
+// test PythonKit Part (Optional)
+import PythonKit
 var version: String? = nil
 func testPythonKit() {
     print("test PythonKit")
