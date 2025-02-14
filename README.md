@@ -1,10 +1,17 @@
-# SwiftwithPython
-How to embed Python Framework into Swift Projects
+@kostrykin 
 
-1. Follow up the detail instructions on Python official website (except the `app` folder part, it is optional:
+Repo:
+https://github.com/frogcjn/SwiftwithPython/tree/main
+# SwiftwithPython
+
+How to embed Python Framework into Swift Projects (currently iOS)
+
+1. Create an empty Swift iOS Project
+
+2. Follow up the detail instructions on Python official website (except the `app` folder part, it is optional):
 https://docs.python.org/3.14/using/ios.html#adding-python-to-an-ios-project
 
-2. Create two file copies called `module.modulemap` inside
+3. Create two file copies called `module.modulemap` inside
 
 - `Python.xcframework/ios-arm64/Python.framework/Headers/` and
 
@@ -19,7 +26,11 @@ module Python {
 }
 ```
 
-3. Add `init` func to the app swift file
+4. PythonKit is not a requirement to use Python on iOS, but if you want to use code in `testPythonKit()` in next step to test, then you should add `PythonKit` on the Xcode project settings, there is a Swift Package Manager configuration.
+
+![Image](https://github.com/user-attachments/assets/e25a1ea8-586e-48a1-904c-78798755f2fa)
+
+5. Add `init` func to the app swift file
 ```Swift
 import SwiftUI
 
@@ -38,7 +49,7 @@ struct SwiftPythonApp: App {
 }
 ```
 
-4. Also add a new `InitPython.swift` file to the target:
+6. Also add a new `InitPython.swift` file to the target:
 
 ```Swift
 import Python
@@ -83,6 +94,6 @@ func testPythonKit() {
 }
 ```
 
-5. Final Result
+7. Final Result
 
 ![IMG_3538](https://github.com/user-attachments/assets/b15acf70-8987-48b3-b21a-7fe6780d5e3b)
