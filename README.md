@@ -34,7 +34,7 @@ Step 3-9 are necessary steps to `import Python` in Swift, Xcode will search the 
 
 ![Image](https://github.com/user-attachments/assets/e25a1ea8-586e-48a1-904c-78798755f2fa)
 
-5. Add `init` func to the iOS Project App swift file
+11. Add `init` func to the iOS Project App swift file
 ```Swift
 import SwiftUI
 
@@ -53,7 +53,7 @@ struct SwiftPythonApp: App {
 }
 ```
 
-11. Also add a new `InitPython.swift` file to the target:
+12. Also add a new `InitPython.swift` file to the target:
 
 ```Swift
 import Foundation
@@ -100,7 +100,7 @@ func testPythonKit() {
 }
 ```
 
-12. Edit `ContentView.swift`
+13. Edit `ContentView.swift`
 ```Swift
 import SwiftUI
 
@@ -122,6 +122,6 @@ struct ContentView: View {
 
 ```
 
-13. Final Result
+14. Final Result
 
 ![IMG_3538](https://github.com/user-attachments/assets/b15acf70-8987-48b3-b21a-7fe6780d5e3b)
