@@ -1,7 +1,3 @@
-@kostrykin 
-
-Repo:
-https://github.com/frogcjn/SwiftwithPython/tree/main
 # SwiftwithPython
 
 How to embed Python Framework into Swift Projects (currently iOS)
@@ -26,7 +22,7 @@ module Python {
 }
 ```
 
-4. PythonKit is not a requirement to use Python on iOS, but if you want to use code in `testPythonKit()` in next step to test, then you should add `PythonKit` on the Xcode project settings, there is a Swift Package Manager configuration.
+4. `PythonKit` is not a requirement to use Python on iOS, but if you want to use the code in `testPythonKit()` in next step to test, then you should add `PythonKit` on the Xcode project settings, there is a Swift Package Manager configuration.
 
 ![Image](https://github.com/user-attachments/assets/e25a1ea8-586e-48a1-904c-78798755f2fa)
 
@@ -82,10 +78,12 @@ func initPythonSimpleVersion() {
     print("init Success")
 }
 
+var version: String? = nil
 func testPythonKit() {
     print("test PythonKit")
     
     let sys = Python.import("sys")
+    version = "\(sys.version)"
     print("Python Version: \(sys.version_info.major).\(sys.version_info.minor)")
     print("Python Encoding: \(sys.getdefaultencoding().upper())")
     print("Python Path: \(sys.path)")
@@ -94,6 +92,28 @@ func testPythonKit() {
 }
 ```
 
-7. Final Result
+7. Edit `ContentView.swift`
+```Swift
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("🐍")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, Python \(version ?? "Not Available")!")
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+```
+
+8. Final Result
 
 ![IMG_3538](https://github.com/user-attachments/assets/b15acf70-8987-48b3-b21a-7fe6780d5e3b)
