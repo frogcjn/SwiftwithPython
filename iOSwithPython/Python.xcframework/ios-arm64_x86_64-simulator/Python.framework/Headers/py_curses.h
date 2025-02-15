@@ -23,19 +23,6 @@
 # endif
 #endif
 
-#if defined(WINDOW_HAS_FLAGS) && defined(__APPLE__)
-/* gh-109617, gh-115383: we can rely on the default value for NCURSES_OPAQUE on
-   most platforms, but not on macOS. This is because, starting with Xcode 15,
-   Apple-provided ncurses.h comes from ncurses 6 (which defaults to opaque
-   structs) but can still be linked to older versions of ncurses dynamic
-   libraries which don't provide functions such as is_pad() to deal with opaque
-   structs. Setting NCURSES_OPAQUE to 0 is harmless in all ncurses releases to
-   this date (provided that a thread-safe implementation is not required), but
-   this might change in the future. This fix might become irrelevant once
-   support for macOS 13 or earlier is dropped. */
-#define NCURSES_OPAQUE 0
-#endif
-
 #if defined(HAVE_NCURSESW_NCURSES_H)
 #  include <ncursesw/ncurses.h>
 #elif defined(HAVE_NCURSESW_CURSES_H)
@@ -48,6 +35,21 @@
 #  include <ncurses.h>
 #elif defined(HAVE_CURSES_H)
 #  include <curses.h>
+#endif
+
+#if defined(WINDOW_HAS_FLAGS) && defined(__APPLE__)
+/* gh-109617, gh-115383: we can rely on the default value for NCURSES_OPAQUE on
+   most platforms, but not on macOS. This is because, starting with Xcode 15,
+   Apple-provided ncurses.h comes from ncurses 6 (which defaults to opaque
+   structs) but can still be linked to older versions of ncurses dynamic
+   libraries which don't provide functions such as is_pad() to deal with opaque
+   structs. Setting NCURSES_OPAQUE to 0 is harmless in all ncurses releases to
+   this date (provided that a thread-safe implementation is not required), but
+   this might change in the future. This fix might become irrelevant once
+   support for macOS 13 or earlier is dropped. */
+#ifndef NCURSES_OPAQUE 0
+#define NCURSES_OPAQUE 0
+#endif
 #endif
 
 #ifdef NCURSES_VERSION
@@ -77,7 +79,7 @@ extern "C" {
 
 typedef struct {
     PyObject_HEAD
-    WINDOW *win;
+    void *win;
     char *encoding;
 } PyCursesWindowObject;
 
