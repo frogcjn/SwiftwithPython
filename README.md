@@ -5,4 +5,5 @@ See https://www.notion.so/frogcjn/Swift-with-Python-Step-by-Step-1984959764ca809
 
 Final Result
 
-![IMG_3538](https://github.com/user-attachments/assets/b15acf70-8987-48b3-b21a-7fe6780d5e3b)
+![Screenshot_iOS](https://github.com/user-attachments/assets/2544142c-e57c-4604-a54b-25c45524009a)
+
