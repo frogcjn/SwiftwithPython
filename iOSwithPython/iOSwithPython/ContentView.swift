@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  iOSwithPython3.13
-//
-//  Created by Cao, Jiannan on 2/12/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -13,7 +6,7 @@ struct ContentView: View {
             Text("🐍")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, Python \(version ?? "Not Available")!")
+            Text("Hello, Python Version: \(version)")
         }
         .padding()
     }
